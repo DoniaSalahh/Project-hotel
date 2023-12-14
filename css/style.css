@@ -1,0 +1,375 @@
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&family=Noto+Serif&family=Open+Sans:wght@300;400&display=swap');
+:root{
+    --padding-top:50px;
+    --padding-bottom:50px;
+    --main-color:#dca73a;
+}
+body{
+    font-family: 'Noto Serif', 'serif';
+
+}
+
+/* Start Navbar */
+.navbar{
+    box-shadow: 1.395px 19.951px 38px 0px rgba(0, 0, 0, 0.1);
+}
+.navbar .container .navbar-brand{
+    font-size: 25px;
+    font-weight: bold;
+}
+.navbar .container .navbar-nav .nav-link{
+    color: black;
+}
+.navbar .container .navbar-nav button{
+    background-color: #dca73a;
+    border: none;
+    font-weight: 400;
+    border-radius: 5px;
+}
+/* End Navbar */
+/* Start Home */
+.home{
+    background-image: url('../images/hotel.jpg');
+    height: 100vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 100% 100%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.home .overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color:rgba(0, 0, 0, 0.5);
+}
+.home .container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    font-size: 30px;
+    font-weight: bold;
+    position: relative;
+    z-index: 1;
+}
+@media(max-width: 767px){
+    .home .container h1{
+        font-size: 30px;
+    }
+    .home .container span{
+        font-size: 22px;
+    }
+
+}
+/* End Home*/
+/* Start About */
+.about{
+    padding-top: var(--padding-top);
+    padding-bottom: var(--padding-bottom);
+
+}
+.about .container .box{
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+}
+.about .container .box .image{
+    width: 440px;
+}
+.about .container .box .image img{
+    width: 100%;
+}
+.about .container .box .text {
+    width: 50%;
+}
+.about .container .box .text h6{
+    color:var(--main-color);
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+.about .container .box .text h3{
+    font-size: 25px;
+    font-weight: 600;
+    color:#112e41;
+    font-family: 'Noto Serif', 'serif';
+    margin-bottom: 15px;
+}
+.about .container .box .text .one{
+    margin-bottom: 15px;
+    color: #112e41;
+    font-size: 16px;
+    font-weight: 500;
+}
+.about .container .box .text .two{
+    color: #888888;
+    font-size: 15px;
+    margin-bottom: 25px;
+}
+.about .container .box .text button{
+    border: none;
+    background-color: var(--main-color);
+    padding: 15px 20px;
+    border-radius: 5px;
+}
+.about .container .box .text button a{
+    font-size: 20px;
+    text-decoration: none;
+    color: white;
+}
+@media(max-width: 767px){
+    .about .container .box{
+        flex-direction: column;
+    }
+    .about .container .box .text,
+    .about .container .box .image{
+        width: 100%;
+    }
+}
+/* End About */
+/* Start Service */
+.service{
+    padding-top: var(--padding-top);
+    padding-bottom: var(--padding-bottom);
+}
+.service .container h2{
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 35px;
+    font-weight: bold;
+    font-family: 'Noto Serif', 'serif';
+    color: #112e41;
+}
+.service .container .row .image{
+    overflow: hidden;
+}
+.service .container .row .image img{
+    transition: all 0.4s;
+}
+.service .container .row .image img:hover{
+    transform: rotate(2deg) scale(1.1);
+}
+.service .container .row .text{
+    padding: 20px;
+    box-shadow: 1.395px 19.951px 38px 0px rgba(0, 0, 0, 0.05);
+    border-radius: 0 0 5px 5px;
+    transition: all 0.4s;
+}
+.service .container .row .text h6{
+    color: #112e41;
+    font-size: 23px;
+}
+.service .container .row .text .night span{
+    color: #848484;
+    font-size: 14px;
+}
+.service .container .row .text:hover h6{
+    color: var(--main-color);
+}
+@media(max-width: 767px){
+    .service .container .row .image img{
+        width: 100%;
+    }
+}
+/* End Service */
+/* Start Activities */
+.activity{
+    padding-top: var(--padding-top);
+    padding-bottom: var(--padding-bottom);
+}
+.activity .container .box .image{
+    width: 500px;
+}
+.activity .container .box .image img{
+    width: 100%;
+}
+.activity .container .box .text{
+    width: 50%;
+}
+.activity .container .box .text h6{
+    color: #dca73a;
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+.activity .container .box .text span{
+    color: #112e41;
+    font-weight: 600;
+    margin-bottom: 30px;
+}
+.activity .container .box .text p{
+    margin: 30px 0;
+    line-height: 1.6;
+    font-size: 15px;
+    color: #909092;
+}
+.activity .container .box .text button{
+    border: none;
+    background-color: var(--main-color);
+    padding: 15px 20px;
+    border-radius: 5px;
+}
+.activity .container .box .text button a{
+    font-size: 20px;
+    text-decoration: none;
+    color: white;
+}
+@media(max-width: 767px){
+    .activity .container .box {
+        flex-direction: column;
+        align-items: normal;
+    }
+    .activity .container .box .image,
+    .activity .container .box .text{
+        width: 100%;
+
+    }
+}
+/* End Activities */
+/* Start Blog */
+.blog{
+    padding-top: var(--padding-top);
+    padding-bottom: var(--padding-bottom);
+}
+.blog .container .parent .image{
+    overflow: hidden;
+}
+.blog .container .parent .image img{
+    transition: all 0.4s;
+}
+.blog .container .parent:hover img{
+    transform: rotate(2deg) scale(1.1);
+}
+.blog .container .content{
+    padding: 20px 40px;
+    box-shadow: 1.395px 19.951px 38px 0px rgba(0, 0, 0, 0.05);
+    border-radius: 0 0 5px 5px;
+}
+.blog .container .content .text{
+    margin-bottom: 30px;
+}
+.blog .container .content .text button{
+    padding: 5px 10px;
+    background-color: var(--main-color);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-family: 'Noto Serif', 'serif';
+}
+.blog .container .content .text p{
+    font-size: 15px;
+    color: #c7c7c7;
+}
+.blog .container .content .text span{
+    font-size: 14px;
+    color: var(--main-color);
+}
+.blog .container .content .para{
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 30px;
+    color: #909092;
+    margin-bottom: 13px;
+    font-family: "Noto Serif", serif;
+}
+.blog .container .content .box{
+    color: #adadad;
+    font-size: 14px;
+}
+@media(max-width: 767px){
+    .blog .container .parent .image img{
+        width: 100%;
+    }
+}
+/* End Blog */
+/* Start Booking */
+.booking{
+    padding-top: var(--padding-top);
+    padding-bottom: var(--padding-bottom);
+}
+.booking .container h3{
+    color: var(--main-color);
+    font-family: "Noto Serif", serif;
+    font-weight: bold;
+}
+.booking .container form input{
+    color: #adadad;
+    font-size: 14px;
+}
+.booking .container form label{
+    color: #262626;
+    font-size: 16px;
+    font-weight: 600;
+}
+.booking .container form button{
+    padding: 10px 15px;
+    background-color: var(--main-color);
+    border: none;
+    border-radius: 5px;
+    font-family: 'Noto Serif', 'serif';
+}
+.booking .container form button a{
+    color: white;
+    text-decoration: none;
+}
+/* End Booking */
+/* Start Footer */
+.footer{
+    background-color: #16161a;
+    padding: 80px 50px;
+    color: white;
+}
+.footer .container .row h3{
+    color: white;
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+.footer .container .row .one{
+    color: var(--main-color);
+    font-weight: bold;
+    font-size: 20px;
+}
+.footer .container .row .icon i{
+    margin-right: 20px;
+    font-size: 20px;
+    margin-bottom: 20px;
+    transition: all 0.4s;
+    color: #868c98;
+}
+.footer .container .row .icon i:hover{
+    color: var(--main-color);
+}
+.footer .container .row p{
+    color:  #868c98;
+    font-size: 14px;
+    width: 200px;
+}
+.footer .container .row ul{
+    padding-left: 0;
+}
+.footer .container .row ul li{
+    list-style: none;
+    margin-bottom: 10px;
+    color:  #868c98;
+    font-size: 13px;
+    transition: all 0.4s;
+    font-weight: 300;
+}
+.footer .container .row ul li:hover{
+    color: var(--main-color);
+    padding-left: 5px;
+}
+.footer .container .row input::placeholder{
+    font-size: 13px;
+}
+@media(max-width:767px){
+    .footer{
+        padding: 50px 30px;
+    }
+}
+/* End Footer */
